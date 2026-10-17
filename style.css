@@ -1,0 +1,155 @@
+/* style.css */
+
+/* ⚡ QUICK EDIT THEME PORTS - Change these to swap colors instantly */
+:root {
+    --bg-dark: #0a0b10;          /* Deep cinematic background */
+    --card-bg: #12141c;          /* Sleek container panels */
+    --text-muted: #94a3b8;        /* Soft slate details text */
+    
+    /* Bright, High-Contrast Visibility Colors */
+    --text-bright: #ffffff;      /* Pure vibrant white for headers */
+    --brand-purple: #6366f1;     /* Electric purple accent */
+    --whatsapp-neon: #00ff66;    /* Highly visible action button green */
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-bright);
+    overflow-x: hidden;
+}
+
+/* Custom Blurred Navigation Header */
+.navbar {
+    background-color: rgba(10, 11, 16, 0.85) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* High Visibility Brand Anchor */
+.navbar-brand {
+    color: var(--text-bright) !important;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 800 !important;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand span {
+    color: var(--brand-purple) !important;
+}
+
+/* Hero Section Base */
+.hero-section {
+    position: relative;
+    padding: 160px 0 120px 0;
+    background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent 45%),
+                radial-gradient(circle at bottom left, rgba(244, 63, 94, 0.08), transparent 40%);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #ffffff 30%, #a5b4fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Primary Call to Action Styling */
+.btn-premium {
+    background: linear-gradient(135deg, var(--brand-purple) 0%, #4f46e5 100%);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+}
+
+.btn-premium:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(99, 102, 241, 0.6);
+    color: white;
+}
+
+/* High Contrast Global Section Titles (About, Services, Contact) */
+.bright-title {
+    color: var(--text-bright) !important;
+    font-weight: 800 !important;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+    letter-spacing: -0.5px;
+}
+
+/* Glassmorphic Feature Component Blocks */
+.custom-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.custom-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--brand-purple);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Framed Asset Mockup Boxes */
+.media-preview {
+    background: #1e2230;
+    height: 180px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    margin-top: 15px;
+}
+
+/* Category Tracker Metadata Labels */
+.section-tag {
+    color: var(--brand-purple);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.text-muted-custom {
+    color: var(--text-muted);
+}
+
+/* ⚡ HIGH VISIBILITY GLOWING WHATSAPP BUTTON ACCENT */
+.btn-whatsapp {
+    background: linear-gradient(135deg, var(--whatsapp-neon) 0%, #00e65a 100%) !important;
+    color: #000000 !important; /* Premium pitch black text overlay for max readability */
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-weight: 800; /* Extra dense font weighting */
+    letter-spacing: 0.3px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 0 35px rgba(0, 255, 102, 0.45) !important; /* Radiating outer bloom glow */
+    border: none !important;
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 255, 102, 0.7) !important;
+}
