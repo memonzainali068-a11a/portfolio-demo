@@ -1,32 +1,34 @@
 /* style.css */
 
-/* ⚡ QUICK EDIT THEME PORTS - Change these to swap colors instantly */
+/* ⚡ GLOBAL COLOR CONFIGURATIONS - Quick Edit Area */
 :root {
     --bg-dark: #0a0b10;          /* Deep cinematic background */
     --card-bg: #12141c;          /* Sleek container panels */
     --text-muted: #94a3b8;        /* Soft slate details text */
     
-    /* Bright, High-Contrast Visibility Colors */
+    /* High-Visibility Branding Accent Palette */
     --text-bright: #ffffff;      /* Pure vibrant white for headers */
     --brand-purple: #6366f1;     /* Electric purple accent */
-    --whatsapp-neon: #00ff66;    
+    --whatsapp-neon: #00ff66;    /* Highly visible action button green */
 }
 
+/* 🚀 SPEED OPTIMIZED TYPOGRAPHY AND CORE OBJECTS */
 body {
-    font-family: 'system-ui','-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    /* Uses high-performance native system fonts to eliminate web load lag completely */
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-bright);
     overflow-x: hidden;
 }
 
-/* Custom Blurred Navigation Header */
+/* Custom Glassmorphic Navigation Header */
 .navbar {
     background-color: rgba(10, 11, 16, 0.85) !important;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* High Visibility Brand Anchor */
+/* High Visibility Navbar Logo */
 .navbar-brand {
     color: var(--text-bright) !important;
     font-size: 1.4rem;
@@ -39,7 +41,7 @@ body {
     color: var(--brand-purple) !important;
 }
 
-/* Hero Section Base */
+/* Hero Section Base Accent Gradients */
 .hero-section {
     position: relative;
     padding: 160px 0 120px 0;
@@ -49,11 +51,13 @@ body {
 
 .gradient-text {
     background: linear-gradient(135deg, #ffffff 30%, #a5b4fc 100%);
+    background-clip: text;
     -webkit-background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
 }
 
-/* Primary Call to Action Styling */
+/* Primary Corporate Action Button */
 .btn-premium {
     background: linear-gradient(135deg, var(--brand-purple) 0%, #4f46e5 100%);
     color: white;
@@ -72,7 +76,7 @@ body {
     color: white;
 }
 
-/* High Contrast Global Section Titles (About, Services, Contact) */
+/* High Contrast Section Titles (About, Services, Contact) */
 .bright-title {
     color: var(--text-bright) !important;
     font-weight: 800 !important;
@@ -80,7 +84,7 @@ body {
     letter-spacing: -0.5px;
 }
 
-/* Glassmorphic Feature Component Blocks */
+/* Premium Card Component Panels */
 .custom-card {
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -107,7 +111,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Framed Asset Mockup Boxes */
+/* Portfolio Content Display Framing Mockups */
 .media-preview {
     background: #1e2230;
     height: 180px;
@@ -121,7 +125,7 @@ body {
     margin-top: 15px;
 }
 
-/* Category Tracker Metadata Labels */
+/* Small Dynamic Category Labels */
 .section-tag {
     color: var(--brand-purple);
     font-weight: 600;
@@ -136,27 +140,27 @@ body {
     color: var(--text-muted);
 }
 
-/* Update your existing button style to look exactly like this */
+/* ⚡ NO-BREAK ANTI-SPLIT GLOWING WHATSAPP BUTTON ACCENT */
 .btn-whatsapp {
     background: linear-gradient(135deg, var(--whatsapp-neon) 0%, #00e65a 100%) !important;
-    color: #000000 !important;
+    color: #000000 !important; /* Pitch black for crystal clear reading clarity */
     border-radius: 50px;
-    padding: 15px 32px; /* Adjusted padding slightly for small mobile screens */
+    padding: 14px 28px; /* Balanced tight padding for smaller mobile displays */
     font-weight: 800;
     letter-spacing: 0.3px;
     
-    /* ⚡ THE INSTANT FIXES FOR BREAKING TEXT */
-    white-space: nowrap;       /* Forces the entire text to stay on one single line */
-    display: inline-flex;      /* Keeps the icon and text aligned perfectly */
-    align-items: center;       /* Centers the icon vertically with the text */
+    /* Dynamic layout fixes to block text from breaking into two stacked rows */
+    white-space: nowrap !important;       /* Locks string onto one single absolute row line */
+    display: inline-flex !important;      /* Aligns vector icon inline with text blocks */
+    align-items: center;                  /* Vertically centers items cleanly */
     justify-content: center;
     
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 0 35px rgba(0, 255, 102, 0.45) !important;
+    box-shadow: 0 0 30px rgba(0, 255, 102, 0.4) !important; /* Deep glowing bloom mask */
     border: none !important;
 }
 
 .btn-whatsapp:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 12px 40px rgba(0, 255, 102, 0.7) !important;
+    box-shadow: 0 12px 35px rgba(0, 255, 102, 0.65) !important;
 }
